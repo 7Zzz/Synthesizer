@@ -1,0 +1,1 @@
+540 & 549 in hal_spi.c - change for   SPI1->DR = (*pData);
