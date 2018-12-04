@@ -10,11 +10,14 @@
 
 #include "MCP_button.h"
 #include "dig_LED.h"
-//#include "dig_LED.c"
 
-#define COLOR_ON 255, 0, 0
-#define COLOR_OFF 0, 0, 255
+#define SELECTION_ON    0, 255,   0
+#define METRONOME_ON  255,   0,   0
 
-void memorize_buttons(void);
+u8 st_mode_selection;
+u8 state;
+
+void mode_selection(void);
+void metornome(void);
 
 #endif /* SEQUENCER_H_ */

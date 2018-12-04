@@ -63,7 +63,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/%.o: ../Drivers/STM32F1xx_HAL_Driver/Src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/All_my_projects/stm_projects/My_HAL/Inc" -I"C:/All_my_projects/stm_projects/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/All_my_projects/stm_projects/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/All_my_projects/stm_projects/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/All_my_projects/stm_projects/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"D:/Projects/Synthesizer/My_HAL/Inc" -I"D:/Projects/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/Projects/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"D:/Projects/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/Projects/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
