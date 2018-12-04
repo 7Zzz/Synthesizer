@@ -20,5 +20,6 @@ u8 state;
 
 void mode_selection(void);
 void metornome(void);
+void light(void);
 
 #endif /* SEQUENCER_H_ */

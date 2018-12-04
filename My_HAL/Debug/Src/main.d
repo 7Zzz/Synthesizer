@@ -36,11 +36,14 @@ Src/main.o: ../Src/main.c \
  C:/All_my_projects/stm_projects/My_HAL/Inc/global.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/lcd.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/dig_LED.h \
+ C:/All_my_projects/stm_projects/My_HAL/Inc/sequencer.h \
+ C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h \
+ C:/All_my_projects/stm_projects/My_HAL/Inc/global.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/MCP23017.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/i2c.h \
- C:/All_my_projects/stm_projects/My_HAL/Inc/global.h \
- C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h \
+ C:/All_my_projects/stm_projects/My_HAL/Inc/dig_LED.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/MCP23017.h \
+ C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h \
  C:/All_my_projects/stm_projects/My_HAL/Inc/DWT.h
 
 C:/All_my_projects/stm_projects/My_HAL/Inc/main.h:
@@ -117,14 +120,20 @@ C:/All_my_projects/stm_projects/My_HAL/Inc/lcd.h:
 
 C:/All_my_projects/stm_projects/My_HAL/Inc/dig_LED.h:
 
+C:/All_my_projects/stm_projects/My_HAL/Inc/sequencer.h:
+
+C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h:
+
+C:/All_my_projects/stm_projects/My_HAL/Inc/global.h:
+
 C:/All_my_projects/stm_projects/My_HAL/Inc/MCP23017.h:
 
 C:/All_my_projects/stm_projects/My_HAL/Inc/i2c.h:
 
-C:/All_my_projects/stm_projects/My_HAL/Inc/global.h:
-
-C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h:
+C:/All_my_projects/stm_projects/My_HAL/Inc/dig_LED.h:
 
 C:/All_my_projects/stm_projects/My_HAL/Inc/MCP23017.h:
+
+C:/All_my_projects/stm_projects/My_HAL/Inc/MCP_button.h:
 
 C:/All_my_projects/stm_projects/My_HAL/Inc/DWT.h:

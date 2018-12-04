@@ -23,6 +23,7 @@
 //#include "My_enc.h"
 #include "dig_LED.h"
 
+#include "sequencer.h"
 #include "MCP23017.h"
 #include "MCP_button.h"
 
@@ -129,15 +130,13 @@ int main(void) {
 //				HAL_Delay(5000);
 //				for (int i = 0; i < 4; i++)
 //					Reg_Send(&dataToSend[i]);
+		setLEDcolor(15,255,0,0);
+		//light();
+		//	for(int y = 0; y < 256; y++)
+				//{
 
-		DIG_LED_update();
-		HAL_Delay(100);
-		HsvColor Hsv;
-		Hsv.h = 180;
-		Hsv.s = 1;
-		Hsv.v = 1;
-		setWHOLEcolor(HsvToRgb(Hsv).r, HsvToRgb(Hsv).g, HsvToRgb(Hsv).b);
-		DIG_LED_update();
+				//}
+	}
 // rainbow led
 
 //				for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
@@ -187,7 +186,8 @@ int main(void) {
 	}
 	/* USER CODE END 3 */
 
-}
+
+
 
 /**
  * @brief System Clock Configuration

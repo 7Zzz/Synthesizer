@@ -61,9 +61,9 @@ typedef struct {
 } rgb;
 
 typedef struct {
-    double h;       // angle in degrees
-    double s;       // a fraction between 0 and 1
-    double v;       // a fraction between 0 and 1
+    double h;       //Hue angle in degrees
+    double s;       //saturation a fraction between 0 and 1
+    double v;       //value  a fraction between 0 and 1
 } hsv;// color tone
 
 hsv rgb2hsv(rgb in);
