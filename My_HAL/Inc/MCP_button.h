@@ -44,6 +44,6 @@ u8 buttonMsg[3];                    // message to send on state change
 // functions
 void MCP_Button_Init(BTN_TypeDef* b, u8 num, IO_PortTD port, IO_PinTD pin);
 void MCP_Buttons_InitAll(void);     // for one MCP (TODO: for many)
-void BTN_Read_All(u8 mcp_addr);
+int *BTN_Read_All(u8 mcp_addr);
 
 #endif /* BUTTON_H_ */

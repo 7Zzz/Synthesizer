@@ -44,14 +44,14 @@
 
 
 
-//void DIG_LED_init(void);
+void DIG_LED_init(void);
 void DIG_LED_update(void);
 
 void setLEDcolor(uint32_t LEDnumber, uint8_t RED, uint8_t GREEN, uint8_t BLUE);
 void setWHOLEcolor(uint8_t RED, uint8_t GREEN, uint8_t BLUE);
 void fillBufferBlack(void);
 void fillBufferWhite(void);
-//void TIMx_DMA_IRQHandler(void);
+void TIMx_DMA_IRQHandler(void);
 
 
 typedef struct {
@@ -69,7 +69,7 @@ typedef struct {
 hsv rgb2hsv(rgb in);
 rgb hsv2rgb(hsv in);
 
-/*
+
 typedef struct RgbColor
 {
     uint8_t r;
@@ -86,6 +86,6 @@ typedef struct HsvColor
 
 RgbColor HsvToRgb(HsvColor hsv);
 HsvColor RgbToHsv(RgbColor rgb);
-*/
+
 
 #endif

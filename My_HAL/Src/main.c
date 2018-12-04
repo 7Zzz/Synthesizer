@@ -110,9 +110,9 @@ int main(void) {
 	MCP_Buttons_InitAll();
 	//Reg_Init();
 
-	for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
-		led_rgb[i] = hsv2rgb(led_hsv[i]);
-	}
+	//for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
+	//	led_rgb[i] = hsv2rgb(led_hsv[i]);
+	//}
 
 	u16 yy = 0;                      // test
 	/* USER CODE END 2 */
@@ -129,11 +129,15 @@ int main(void) {
 //				HAL_Delay(5000);
 //				for (int i = 0; i < 4; i++)
 //					Reg_Send(&dataToSend[i]);
-		// small test for led
-		if (yy < 360)
-			yy++;
-		else
-			yy = 0;
+
+		DIG_LED_update();
+		HAL_Delay(100);
+		HsvColor Hsv;
+		Hsv.h = 180;
+		Hsv.s = 1;
+		Hsv.v = 1;
+		setWHOLEcolor(HsvToRgb(Hsv).r, HsvToRgb(Hsv).g, HsvToRgb(Hsv).b);
+		DIG_LED_update();
 // rainbow led
 
 //				for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
@@ -144,7 +148,7 @@ int main(void) {
 //							led_rgb[i].b * 255);
 //				}
 		// led test
-
+/*
 		setWHOLEcolor(255, 0, 0);
 		for (int index = 0; index < 16; index++) {
 			for (int i = 0; i < 255; i++) {
@@ -179,7 +183,7 @@ int main(void) {
 		//DIG_LED_update();
 
 		BTN_Read_All(MCP23017_ADDR(3));
-
+*/
 	}
 	/* USER CODE END 3 */
 
