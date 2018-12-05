@@ -1,20 +1,43 @@
 #include "sequencer.h"
 
+int array[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0 };
+
+void tumbler(u8 led) {
+	//func to change led state smartly
+	if (array[led] == 1)
+		array[led] = 0;
+	else
+		array[led] = 1;
+}
+
 void mode_selection(void) {
-
 	//TODO selection of mode, buttons combination maybe
-
 	if (st_mode_selection == 1) {
 		switch (state) {
-
-		case "st_metronome":
+		case ST_METRONOME:
 			mentronome();
 			break;
-
 		}
-
 	}
 }
+/*
+ void led(void) // renamed from light to led
+ {
+ HsvColor Hsv;
+ for(int i = 0; i<16; i++)
+ {
+ if(array[i] == 1)
+ {
+ Hsv.h = 170;
+ Hsv.s = 255;
+ Hsv.v = 125;
+ setLEDcolor(i, HsvToRgb(Hsv).r, HsvToRgb(Hsv).g, HsvToRgb(Hsv).b);
+ DIG_LED_update();
+ HAL_Delay(5);
+ }
+ }
+ }
+ */
 
 void metronome(void) {
 	// get color from each button and save it

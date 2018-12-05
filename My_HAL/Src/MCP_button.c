@@ -24,7 +24,7 @@ void MCP_Buttons_InitAll(void) {
 	buttonMsg[2] = UNPRESSED;
 }
 
-int BTN_Read_All(u8 mcp_addr) {
+int *BTN_Read_All(u8 mcp_addr) {
 	int btn_pressed[NUM_OF_BTNs];
 
 	u8 mcpA = MCP23017_ReadPort(mcp_addr, PORTA);

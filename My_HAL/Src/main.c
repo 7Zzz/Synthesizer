@@ -23,6 +23,7 @@
 //#include "My_enc.h"
 #include "dig_LED.h"
 
+#include "sequencer.h"
 #include "MCP23017.h"
 #include "MCP_button.h"
 
@@ -110,9 +111,9 @@ int main(void) {
 	MCP_Buttons_InitAll();
 	//Reg_Init();
 
-	for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
-		led_rgb[i] = hsv2rgb(led_hsv[i]);
-	}
+	//for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
+	//	led_rgb[i] = hsv2rgb(led_hsv[i]);
+	//}
 
 	u16 yy = 0;                      // test
 	/* USER CODE END 2 */
@@ -129,11 +130,13 @@ int main(void) {
 //				HAL_Delay(5000);
 //				for (int i = 0; i < 4; i++)
 //					Reg_Send(&dataToSend[i]);
-		// small test for led
-		if (yy < 360)
-			yy++;
-		else
-			yy = 0;
+		setLEDcolor(15,255,0,0);
+		//light();
+		//	for(int y = 0; y < 256; y++)
+				//{
+
+				//}
+	}
 // rainbow led
 
 //				for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
@@ -144,7 +147,7 @@ int main(void) {
 //							led_rgb[i].b * 255);
 //				}
 		// led test
-
+/*
 		setWHOLEcolor(255, 0, 0);
 		for (int index = 0; index < 16; index++) {
 			for (int i = 0; i < 255; i++) {
@@ -179,11 +182,12 @@ int main(void) {
 		//DIG_LED_update();
 
 		BTN_Read_All(MCP23017_ADDR(3));
-
+*/
 	}
 	/* USER CODE END 3 */
 
-}
+
+
 
 /**
  * @brief System Clock Configuration

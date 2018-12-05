@@ -8,7 +8,7 @@ static uint8_t LEDbuffer[LED_BUFFER_SIZE];
 extern TIM_HandleTypeDef htim2;
 
 
-/*
+
 RgbColor HsvToRgb(HsvColor hsv)
 {
     RgbColor rgb;
@@ -70,7 +70,7 @@ HsvColor RgbToHsv(RgbColor rgb)
         return hsv;
     }
 
-    hsv.s = 255 * long(rgbMax - rgbMin) / hsv.v;
+    //hsv.s = 255 * long(rgbMax - rgbMin) / hsv.v;
     if (hsv.s == 0)
     {
         hsv.h = 0;
@@ -86,7 +86,7 @@ HsvColor RgbToHsv(RgbColor rgb)
 
     return hsv;
 }
-*/
+
 
 
 //static hsv   rgb2hsv(rgb in);
