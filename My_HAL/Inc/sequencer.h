@@ -10,16 +10,24 @@
 
 #include "MCP_button.h"
 #include "dig_LED.h"
+#include <stdlib.h>     //for abs func
 
-#define SELECTION_ON    0, 255,   0
-#define METRONOME_ON  255,   0,   0
-#define st_metronome 0
+#define SELECTED         0  , 255, 255
+#define RECORD_ON_COLOR  255,   0,   0
+#define RECORD_OFF_COLOR 0  ,   0,   0
 
-u8 st_mode_selection;
+#define RECORD_ON        1
+#define RECORD_OFF       0
+
+#define RECORD_BTN  15
+
 u8 state;
 
+void tumbler(u8);
 void mode_selection(void);
-void metornome(void);
+void sequencer_func(void);
 void light(void);
+
+extern volatile uint32_t millis; // am I right?
 
 #endif /* SEQUENCER_H_ */
