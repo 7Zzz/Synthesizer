@@ -65,7 +65,8 @@ static void MX_NVIC_Init(void);
  *
  * @retval None
  */
-int main(void) {
+int main(void)
+{
 	/* USER CODE BEGIN 1 */
 
 	/* USER CODE END 1 */
@@ -116,84 +117,42 @@ int main(void) {
 	//}
 
 	u16 yy = 0;                      // test
+
+	sequencer_func(1);
+	HAL_Delay(500);
+	sequencer_func(0);
+	HAL_Delay(500);
+	sequencer_func(1);
+	HAL_Delay(500);
+	sequencer_func(0);
+	HAL_Delay(500);
+	sequencer_func(1);
+	HAL_Delay(500);
+	sequencer_func(0);
+
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 
-	while (1) {
+	while (1)
+	{
 
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
 
-//				HAL_Delay(5000);
-//				for (int i = 0; i < 4; i++)
-//					Reg_Send(&dataToSend[i]);
-		setLEDcolor(15,255,0,0);
-		//light();
-		//	for(int y = 0; y < 256; y++)
-				//{
-
-				//}
 	}
-// rainbow led
 
-//				for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
-//					led_hsv[i].s = 1; // Saturation led max
-//					led_hsv[i].v = 0.01;//Value or Brightness led
-//					led_rgb[i] = hsv2rgb(led_hsv[i]);//xz
-//					setLEDcolor(i, led_rgb[i].r * 255, led_rgb[i].g * 255,
-//							led_rgb[i].b * 255);
-//				}
-		// led test
-/*
-		setWHOLEcolor(255, 0, 0);
-		for (int index = 0; index < 16; index++) {
-			for (int i = 0; i < 255; i++) {
-				setLEDcolor(index, i, 0, 0);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-			for (int j = 0; j < 255; j++) {
-				setLEDcolor(index, 0, j, 0);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-			for (int k = 0; k < 255; k++) {
-				setLEDcolor(index, 0, 0, k);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-
-		}
-
-		for (int i = 15; i > -1; i--) {
-			setLEDcolor(i, 0, 255, 0);
-
-		}
-		//DIG_LED_update();
-		//HAL_Delay(10);
-
-		//setWHOLEcolor(0, 0, 255);
-		DIG_LED_update();
-		HAL_Delay(5);
-		//setWHOLEcolor(led_rgb[0].r*255, led_rgb[0].g*255, led_rgb[0].b*255);
-		//DIG_LED_update();
-
-		BTN_Read_All(MCP23017_ADDR(3));
-*/
-	}
-	/* USER CODE END 3 */
-
-
-
+}
+/* USER CODE END 3 */
 
 /**
  * @brief System Clock Configuration
  * @retval None
  */
-void SystemClock_Config(void) {
+void SystemClock_Config(void)
+{
 
 	RCC_OscInitTypeDef RCC_OscInitStruct;
 	RCC_ClkInitTypeDef RCC_ClkInitStruct;
@@ -207,7 +166,8 @@ void SystemClock_Config(void) {
 	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
 	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 	RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
-	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+	{
 		_Error_Handler(__FILE__, __LINE__);
 	}
 
@@ -220,7 +180,8 @@ void SystemClock_Config(void) {
 	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
 	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+	{
 		_Error_Handler(__FILE__, __LINE__);
 	}
 
@@ -240,7 +201,8 @@ void SystemClock_Config(void) {
  * @brief NVIC Configuration.
  * @retval None
  */
-static void MX_NVIC_Init(void) {
+static void MX_NVIC_Init(void)
+{
 	/* DMA1_Channel7_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Channel7_IRQn, 0, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Channel7_IRQn);
@@ -256,10 +218,12 @@ static void MX_NVIC_Init(void) {
  * @param  line: The line in file as a number.
  * @retval None
  */
-void _Error_Handler(char *file, int line) {
+void _Error_Handler(char *file, int line)
+{
 	/* USER CODE BEGIN Error_Handler_Debug */
 	/* User can add his own implementation to report the HAL error return state */
-	while (1) {
+	while (1)
+	{
 	}
 	/* USER CODE END Error_Handler_Debug */
 }

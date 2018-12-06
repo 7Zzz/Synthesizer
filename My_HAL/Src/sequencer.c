@@ -1,44 +1,28 @@
 #include "sequencer.h"
 
-// { state, interval }
-int array[NUM_OF_BTNs][NUM_OF_BTNs] =
-{
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 },
-{ 0, 0 } };
-
 void save(u8 index, u8 value)
 {
-	if (array[index][0] == UNPRESSED && value == PRESSED)
+	u8 pressing_index = btns[index].counter_pressing;
+	if (btns[index].state == UNPRESSED && value == PRESSED)
 	{
-		array[index][0] = 1; // save state
-		array[index][1] = millis; //save period into array, but we haven't got array now :(
+		btns[index].state = 1; // saving button state into structure btns
+		time_periods[index][pressing_index] = millis; //save period into array
 	}
-	else if (array[index][0] == PRESSED && value == PRESSED)
+	else if (btns[index].state == PRESSED && value == PRESSED)
 		return;
 
-	else if (array[index][0] == PRESSED && value == UNPRESSED)
-		array[index][1] = abs(millis - array[index][1]);
-
+	else if (btns[index].state == PRESSED && value == UNPRESSED)
+	{
+		time_periods[index][pressing_index] = abs(
+				millis - time_periods[index][pressing_index]);
+		btns[index].counter_pressing += 1; // adding one to pressing counter
+	}
 	else
-		array[index][0] = 0; // save state
+		btns[index].state = 0; // saving button state into structure btns
 
 }
 
-void sequencer_func(void)
+void sequencer_func(u8 i)
 {
 	state = RECORD_OFF;
 	if (RECORD_BTN == PRESSED) // RECORD_BTN it's record activator this is not necessarily a button
@@ -48,11 +32,23 @@ void sequencer_func(void)
 	{
 		setWHOLEcolor(RECORD_OFF_COLOR); // turning led off
 		DIG_LED_update();
-
-		int *buttons = BTN_Read_All(MCP23017_ADDR(3)); // reading all buttons
+		if (i == 0)
+		{
+			//int *btn_values0 = {values0}; //    BTN_Read_All(MCP23017_ADDR(3)); // reading all buttons //TODO without FOR
+			for (int i = 0; i < NUM_OF_BTNs; i++)
+				value1[i] = 0;
+		}
+		else
+		{
+			//int *btn_values1 = {values1}; //    BTN_Read_All(MCP23017_ADDR(3)); // reading all buttons //TODO without FOR
+			for (int i = 0; i < NUM_OF_BTNs; i++)
+				value1[i] = 1;
+		}
+//		for (int i = 0; i < NUM_OF_BTNs; i++)
+//			btns[i].state = btn_values[i];
 
 		for (int i = 0; i < NUM_OF_BTNs; i++)
-			save(i, buttons[i]); // updating state and starting timer(so and stopping it)
+			save(i, value1[i]); // updating state and starting timer(so and stopping it)
 	}
 	else
 	{
@@ -66,7 +62,7 @@ void light(void)
 	HsvColor Hsv;
 	for (int i = 0; i < NUM_OF_BTNs; i++)
 	{
-		if (array[i][0] == 1)
+		if (btns[i].state == 1)
 		{
 			Hsv.h = 170;
 			Hsv.s = 255;
