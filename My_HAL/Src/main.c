@@ -116,6 +116,7 @@ int main(void) {
 	//}
 
 	u16 yy = 0;                      // test
+
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -127,67 +128,34 @@ int main(void) {
 
 		/* USER CODE BEGIN 3 */
 
-//				HAL_Delay(5000);
-//				for (int i = 0; i < 4; i++)
-//					Reg_Send(&dataToSend[i]);
-		setLEDcolor(15,255,0,0);
-		//light();
-		//	for(int y = 0; y < 256; y++)
-				//{
+		//				HAL_Delay(5000);
+		//				for (int i = 0; i < 4; i++)
+		//					Reg_Send(&dataToSend[i]);
+		if (yy < 360)
+			yy++;
+		else
+			yy = 0;
 
-				//}
-	}
-// rainbow led
-
-//				for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
-//					led_hsv[i].s = 1; // Saturation led max
-//					led_hsv[i].v = 0.01;//Value or Brightness led
-//					led_rgb[i] = hsv2rgb(led_hsv[i]);//xz
-//					setLEDcolor(i, led_rgb[i].r * 255, led_rgb[i].g * 255,
-//							led_rgb[i].b * 255);
-//				}
-		// led test
-/*
-		setWHOLEcolor(255, 0, 0);
-		for (int index = 0; index < 16; index++) {
-			for (int i = 0; i < 255; i++) {
-				setLEDcolor(index, i, 0, 0);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-			for (int j = 0; j < 255; j++) {
-				setLEDcolor(index, 0, j, 0);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-			for (int k = 0; k < 255; k++) {
-				setLEDcolor(index, 0, 0, k);
-				DIG_LED_update();
-				HAL_Delay(5);
-			}
-
+		for (uint8_t i = 0; i < DIG_LED_NUMBER; i++) {  // for leds
+			led_hsv[i].h = (yy + 5 * i) % 361;
+			led_hsv[i].s = 1;
+			led_hsv[i].v = 0.01;
+			led_rgb[i] = hsv2rgb(led_hsv[i]);
+			setLEDcolor(i, led_rgb[i].r * 255, led_rgb[i].g * 255,
+					led_rgb[i].b * 255);
 		}
-
-		for (int i = 15; i > -1; i--) {
-			setLEDcolor(i, 0, 255, 0);
-
-		}
-		//DIG_LED_update();
-		//HAL_Delay(10);
-
-		//setWHOLEcolor(0, 0, 255);
+		//
+		//		//setWHOLEcolor(255, 0, 255);
+		//		//setWHOLEcolor(led_rgb[0].r*255, led_rgb[0].g*255, led_rgb[0].b*255);
 		DIG_LED_update();
 		HAL_Delay(5);
-		//setWHOLEcolor(led_rgb[0].r*255, led_rgb[0].g*255, led_rgb[0].b*255);
-		//DIG_LED_update();
+		u8 a[NUM_OF_BTNs];
 
-		BTN_Read_All(MCP23017_ADDR(3));
-*/
+		sequencer_func(BTN_Read_All(MCP23017_ADDR(3), a));
 	}
-	/* USER CODE END 3 */
 
-
-
+}
+/* USER CODE END 3 */
 
 /**
  * @brief System Clock Configuration

@@ -24,19 +24,17 @@ void MCP_Buttons_InitAll(void) {
 	buttonMsg[2] = UNPRESSED;
 }
 
-int *BTN_Read_All(u8 mcp_addr) {
-	int btn_pressed[NUM_OF_BTNs];
-
+void *BTN_Read_All(u8 mcp_addr, u8* btnstates) {
 	u8 mcpA = MCP23017_ReadPort(mcp_addr, PORTA);
 	u8 mcpB = MCP23017_ReadPort(mcp_addr, PORTB);
 	u8 read = 0;
 	for (u8 i = 0; i < NUM_OF_BTNs; i++) {
 		switch (i / 8) {
 		case 0:
-			read = (mcpA >> buttons[i].pin) & 0x01; //Ð²Ñ€Ð¾Ð´Ðµ Ð´Ð°ÐµÑ‚ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´ c 1-8 ÐºÐ½Ð¾Ð¿ÐºÑƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð½Ð°Ð´Ð¾ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‚ÑŒ Ñ€Ð°ÑÑˆÐ¸Ñ€Ð¸Ñ‚ÐµÐ»ÑŽ Ð¿Ð¾Ñ€Ñ‚Ð¾Ð²
+			read = (mcpA >> buttons[i].pin) & 0x01; //âðîäå äàåò äâîè÷íûé êîä c 0-7 êíîïêó êîòîðûé íàäî ïåðåäàòü ðàñøèðèòåëþ ïîðòîâ
 			break;
 		case 1:
-			read = (mcpB >> buttons[i].pin) & 0x01; //Ð²Ñ€Ð¾Ð´Ðµ Ð´Ð°ÐµÑ‚ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´ c 8-16 ÐºÐ½Ð¾Ð¿ÐºÑƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð½Ð°Ð´Ð¾ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‚ÑŒ Ñ€Ð°ÑÑˆÐ¸Ñ€Ð¸Ñ‚ÐµÐ»ÑŽ Ð¿Ð¾Ñ€Ñ‚Ð¾Ð²
+			read = (mcpB >> buttons[i].pin) & 0x01; //âðîäå äàåò äâîè÷íûé êîä c 8-15 êíîïêó êîòîðûé íàäî ïåðåäàòü ðàñøèðèòåëþ ïîðòîâ
 			break;
 		}
 		if (millis - buttons[i].prevTime > INTERVAL) {
@@ -45,25 +43,19 @@ int *BTN_Read_All(u8 mcp_addr) {
 				buttons[i].prevTime = millis;
 				buttonMsg[1] = i;              // fill msg - button number
 				buttonMsg[2] = PRESSED; 	   // button state
-				//for(u8 k = 0; k<3; k++)
-				//Reg_Send(&buttonMsg[k]);     // action  ?
-				if (btn_pressed[i] == 0)
-					btn_pressed[i] = 1;
-				else
-					btn_pressed[i] = 0;
-
+				HAL_SPI_Transmit(&hspi2, buttonMsg, 3, 1);
 			} else if (!read && buttons[i].state == PRESSED) {
 				buttons[i].state = UNPRESSED;
 				buttons[i].prevTime = millis;
 				buttonMsg[1] = i;                  // fill msg - button number
 				buttonMsg[2] = UNPRESSED;          // button state
-				//for (u8 k = 0; k < 3; k++)
-				//Reg_Send(&buttonMsg[k]);     // action   ?
+				HAL_SPI_Transmit(&hspi2, buttonMsg, 3, 1);
 			}
 		}
 		if (buttons[i].prevTime > millis)
 			buttons[i].prevTime = 0;
-	} return btn_pressed;
+		btnstates[i] = buttons[i].state;
+	}
 }
 
 // TODO:

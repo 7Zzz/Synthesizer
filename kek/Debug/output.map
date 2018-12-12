@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
-C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
                               modules/src/LFO.o (arm_sin_f32)
-C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
-                              C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o) (sinTable_f32)
+C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                              C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o) (sinTable_f32)
 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
                               modules/src/Osc.o (__aeabi_i2d)
 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
@@ -5894,8 +5894,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x35 modules/src/button.o
  .debug_macro   0x00000000       0x2e modules/src/button.o
  .debug_macro   0x00000000       0x1c modules/src/button.o
- .debug_line    0x00000000      0x601 modules/src/button.o
- .debug_str     0x00000000    0x5e4f5 modules/src/button.o
+ .debug_line    0x00000000      0x5ed modules/src/button.o
+ .debug_str     0x00000000    0x5e4f1 modules/src/button.o
  .comment       0x00000000       0x80 modules/src/button.o
  .debug_frame   0x00000000       0x34 modules/src/button.o
  .ARM.attributes
@@ -5912,7 +5912,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x11 modules/src/module_template.o
  .debug_macro   0x00000000      0x8e0 modules/src/module_template.o
  .debug_line    0x00000000       0x41 modules/src/module_template.o
- .debug_str     0x00000000     0x25ab modules/src/module_template.o
+ .debug_str     0x00000000     0x25a7 modules/src/module_template.o
  .comment       0x00000000       0x80 modules/src/module_template.o
  .ARM.attributes
                 0x00000000       0x39 modules/src/module_template.o
@@ -6083,8 +6083,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x188 src/adc1.o
  .debug_macro   0x00000000      0x149 src/adc1.o
  .debug_macro   0x00000000       0x35 src/adc1.o
- .debug_line    0x00000000      0x5b9 src/adc1.o
- .debug_str     0x00000000    0x5e2ad src/adc1.o
+ .debug_line    0x00000000      0x5a9 src/adc1.o
+ .debug_str     0x00000000    0x5e2a9 src/adc1.o
  .comment       0x00000000       0x80 src/adc1.o
  .debug_frame   0x00000000       0x30 src/adc1.o
  .ARM.attributes
@@ -6680,7 +6680,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 src/syscalls.o
  .debug_macro   0x00000000       0x88 src/syscalls.o
  .debug_line    0x00000000      0x5d4 src/syscalls.o
- .debug_str     0x00000000     0x7d62 src/syscalls.o
+ .debug_str     0x00000000     0x7d5e src/syscalls.o
  .comment       0x00000000       0x80 src/syscalls.o
  .debug_frame   0x00000000      0x2d4 src/syscalls.o
  .ARM.attributes
@@ -6851,128 +6851,128 @@ Discarded input sections
  .text          0x00000000       0x14 startup/startup_stm32.o
  .data          0x00000000        0x0 startup/startup_stm32.o
  .bss           0x00000000        0x0 startup/startup_stm32.o
- .text          0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .data          0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .bss           0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .text          0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
- .data          0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
- .bss           0x00000000        0x0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .text          0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .data          0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .bss           0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .text          0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .data          0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .bss           0x00000000        0x0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_128
-                0x00000000       0xe0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0xe0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_2048
-                0x00000000     0x4000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x4000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_2048
-                0x00000000      0xf80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0xf80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_32_q31
-                0x00000000       0xc0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0xc0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_4096
-                0x00000000     0x1f80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1f80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_64
-                0x00000000      0x100 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x100 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable64
-                0x00000000       0x70 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x70 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_2048
-                0x00000000     0x2000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x2000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_1024
-                0x00000000      0x7c0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x7c0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_4096
-                0x00000000     0x4000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x4000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_256
-                0x00000000      0x800 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x800 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_1024_q15
-                0x00000000      0xc00 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0xc00 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_1024_q31
-                0x00000000     0x1800 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1800 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_32_q15
-                0x00000000       0x60 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x60 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_16
-                0x00000000       0x80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_4096_q15
-                0x00000000     0x3000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x3000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_4096_q31
-                0x00000000     0x6000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x6000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.sinTable_q15
-                0x00000000      0x402 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x402 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.sinTable_q31
-                0x00000000      0x804 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x804 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_1024
-                0x00000000     0x2000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x2000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_32
-                0x00000000      0x100 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x100 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable1024
-                0x00000000      0xe10 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0xe10 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_16_q15
-                0x00000000       0x30 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x30 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_16_q31
-                0x00000000       0x60 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x60 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable16
-                0x00000000       0x28 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x28 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_32
-                0x00000000       0x80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable32
-                0x00000000       0x60 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x60 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevTable
-                0x00000000      0x800 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x800 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_128
-                0x00000000      0x400 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x400 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_64_q15
-                0x00000000       0xc0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0xc0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_2048_q15
-                0x00000000     0x1800 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1800 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_64_q31
-                0x00000000      0x180 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x180 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_2048_q31
-                0x00000000     0x3000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x3000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_256_q15
-                0x00000000      0x300 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x300 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_512_q15
-                0x00000000      0x600 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x600 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_256_q31
-                0x00000000      0x600 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x600 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_512
-                0x00000000     0x1000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_512_q31
-                0x00000000      0xc00 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0xc00 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable2048
-                0x00000000     0x1dc0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1dc0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armRecipTableQ15
-                0x00000000       0x80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_64
-                0x00000000      0x200 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x200 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable4096
-                0x00000000     0x1f80 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1f80 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armRecipTableQ31
-                0x00000000      0x100 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x100 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_512
-                0x00000000      0x800 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x800 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable512
-                0x00000000      0x380 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x380 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_512
-                0x00000000      0x3c0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x3c0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_16
-                0x00000000       0x18 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x18 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_128_q15
-                0x00000000      0x180 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x180 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_1024
-                0x00000000     0x1000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x1000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_256
-                0x00000000      0x400 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x400 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable256
-                0x00000000      0x370 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x370 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_32
-                0x00000000       0x30 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x30 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_256
-                0x00000000      0x1e0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x1e0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable_fixed_64
-                0x00000000       0x70 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000       0x70 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_rfft_128
-                0x00000000      0x200 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x200 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.armBitRevIndexTable128
-                0x00000000      0x1a0 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x1a0 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_4096
-                0x00000000     0x8000 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000     0x8000 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .rodata.twiddleCoef_128_q31
-                0x00000000      0x300 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000000      0x300 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .data          0x00000000        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
  .bss           0x00000000        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
  .data          0x00000000        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
@@ -7128,7 +7128,7 @@ LOAD src/syscalls.o
 LOAD src/system_stm32f4xx.o
 LOAD src/timer4.o
 LOAD startup/startup_stm32.o
-LOAD C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a
+LOAD C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a
 LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libstdc++.a
 LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a
 START GROUP
@@ -7544,7 +7544,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x080049ec                DMA1_Stream3_IRQHandler
  *fill*         0x080049ee        0x2 
  .text.arm_sin_f32
-                0x080049f0       0x88 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+                0x080049f0       0x88 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
                 0x080049f0                arm_sin_f32
  .text.__libc_init_array
                 0x08004a78       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
@@ -7596,7 +7596,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
  *(.rodata)
  *(.rodata*)
  .rodata.sinTable_f32
-                0x08004c00      0x804 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x08004c00      0x804 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
                 0x08004c00                sinTable_f32
  .rodata._global_impure_ptr
                 0x08005404        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
@@ -7799,9 +7799,9 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
  .ARM.attributes
                 0x000004ca       0x21 startup/startup_stm32.o
  .ARM.attributes
-                0x000004eb       0x39 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+                0x000004eb       0x39 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
  .ARM.attributes
-                0x00000524       0x39 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000524       0x39 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
  .ARM.attributes
                 0x0000055d       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
@@ -7828,7 +7828,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x00000751       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(kek.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xcae4
+.debug_info     0x00000000     0xcae0
  .debug_info    0x00000000      0x62c StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_info    0x0000062c      0xba2 StdPeriph_Driver/src/stm32f4xx_i2c.o
  .debug_info    0x000011ce      0xe6b StdPeriph_Driver/src/stm32f4xx_rcc.o
@@ -7849,9 +7849,9 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_info    0x0000aa60      0x7ee src/spi.o
  .debug_info    0x0000b24e      0x618 src/system_stm32f4xx.o
  .debug_info    0x0000b866      0x707 src/timer4.o
- .debug_info    0x0000bf6d       0x5c startup/startup_stm32.o
- .debug_info    0x0000bfc9      0x17e C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .debug_info    0x0000c147      0x99d C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_info    0x0000bf6d       0x58 startup/startup_stm32.o
+ .debug_info    0x0000bfc5      0x17e C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_info    0x0000c143      0x99d C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_abbrev   0x00000000     0x22db
  .debug_abbrev  0x00000000      0x1bb StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -7875,8 +7875,8 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_abbrev  0x00001e9a      0x15b src/system_stm32f4xx.o
  .debug_abbrev  0x00001ff5      0x17d src/timer4.o
  .debug_abbrev  0x00002172       0x12 startup/startup_stm32.o
- .debug_abbrev  0x00002184       0xd3 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .debug_abbrev  0x00002257       0x84 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_abbrev  0x00002184       0xd3 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_abbrev  0x00002257       0x84 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_aranges  0x00000000      0xc00
  .debug_aranges
@@ -7922,9 +7922,9 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_aranges
                 0x00000ba0       0x28 startup/startup_stm32.o
  .debug_aranges
-                0x00000bc8       0x20 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+                0x00000bc8       0x20 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
  .debug_aranges
-                0x00000be8       0x18 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+                0x00000be8       0x18 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_ranges   0x00000000      0xac0
  .debug_ranges  0x00000000       0x78 StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -7948,7 +7948,7 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_ranges  0x00000a58       0x20 src/system_stm32f4xx.o
  .debug_ranges  0x00000a78       0x18 src/timer4.o
  .debug_ranges  0x00000a90       0x20 startup/startup_stm32.o
- .debug_ranges  0x00000ab0       0x10 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_ranges  0x00000ab0       0x10 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
 
 .debug_macro    0x00000000     0x4a22
  .debug_macro   0x00000000      0x1bc StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -8008,32 +8008,32 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_macro   0x0000483e      0x1ce src/timer4.o
  .debug_macro   0x00004a0c       0x16 src/timer4.o
 
-.debug_line     0x00000000     0x9b26
+.debug_line     0x00000000     0x9a2a
  .debug_line    0x00000000      0x72c StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_line    0x0000072c      0x8c0 StdPeriph_Driver/src/stm32f4xx_i2c.o
  .debug_line    0x00000fec      0xa20 StdPeriph_Driver/src/stm32f4xx_rcc.o
  .debug_line    0x00001a0c      0x831 StdPeriph_Driver/src/stm32f4xx_spi.o
  .debug_line    0x0000223d      0xe7e StdPeriph_Driver/src/stm32f4xx_tim.o
  .debug_line    0x000030bb      0x872 StdPeriph_Driver/src/stm32f4xx_usart.o
- .debug_line    0x0000392d      0x67a modules/src/ADSR.o
- .debug_line    0x00003fa7      0x6b5 modules/src/ADSRwave.o
- .debug_line    0x0000465c      0x5fd modules/src/DAC.o
- .debug_line    0x00004c59      0x6e7 modules/src/LFO.o
- .debug_line    0x00005340      0x6ea modules/src/LFOfld.o
- .debug_line    0x00005a2a      0x7eb modules/src/Osc.o
- .debug_line    0x00006215      0x60f modules/src/wire.o
- .debug_line    0x00006824      0x6fd src/codec.o
- .debug_line    0x00006f21      0x5ff src/encoder.o
- .debug_line    0x00007520      0x6c1 src/leds.o
- .debug_line    0x00007be1      0xa42 src/main.o
- .debug_line    0x00008623      0x5e0 src/spi.o
- .debug_line    0x00008c03      0x621 src/system_stm32f4xx.o
- .debug_line    0x00009224      0x5e1 src/timer4.o
- .debug_line    0x00009805       0x7c startup/startup_stm32.o
- .debug_line    0x00009881      0x177 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
- .debug_line    0x000099f8      0x12e C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_line    0x0000392d      0x666 modules/src/ADSR.o
+ .debug_line    0x00003f93      0x6a1 modules/src/ADSRwave.o
+ .debug_line    0x00004634      0x5e9 modules/src/DAC.o
+ .debug_line    0x00004c1d      0x6d3 modules/src/LFO.o
+ .debug_line    0x000052f0      0x6d6 modules/src/LFOfld.o
+ .debug_line    0x000059c6      0x7d7 modules/src/Osc.o
+ .debug_line    0x0000619d      0x5fb modules/src/wire.o
+ .debug_line    0x00006798      0x6ed src/codec.o
+ .debug_line    0x00006e85      0x5ef src/encoder.o
+ .debug_line    0x00007474      0x6b1 src/leds.o
+ .debug_line    0x00007b25      0xa2e src/main.o
+ .debug_line    0x00008553      0x5d0 src/spi.o
+ .debug_line    0x00008b23      0x615 src/system_stm32f4xx.o
+ .debug_line    0x00009138      0x5d1 src/timer4.o
+ .debug_line    0x00009709       0x7c startup/startup_stm32.o
+ .debug_line    0x00009785      0x177 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_line    0x000098fc      0x12e C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
-.debug_str      0x00000000    0x663ae
+.debug_str      0x00000000    0x663c7
  .debug_str     0x00000000    0x5e300 StdPeriph_Driver/src/stm32f4xx_gpio.o
                               0x5e509 (size before relaxing)
  .debug_str     0x0005e300      0x545 StdPeriph_Driver/src/stm32f4xx_i2c.o
@@ -8046,37 +8046,37 @@ OUTPUT(kek.elf elf32-littlearm)
                               0x5ef00 (size before relaxing)
  .debug_str     0x000604e1      0x533 StdPeriph_Driver/src/stm32f4xx_usart.o
                               0x5e81c (size before relaxing)
- .debug_str     0x00060a14      0x19e modules/src/ADSR.o
-                              0x5e399 (size before relaxing)
- .debug_str     0x00060bb2       0x70 modules/src/ADSRwave.o
-                              0x5e3a7 (size before relaxing)
- .debug_str     0x00060c22       0x98 modules/src/DAC.o
-                              0x5e33e (size before relaxing)
- .debug_str     0x00060cba     0x3c9b modules/src/LFO.o
-                              0x620b6 (size before relaxing)
- .debug_str     0x00064955       0x6e modules/src/LFOfld.o
-                              0x620ca (size before relaxing)
- .debug_str     0x000649c3       0xc7 modules/src/Osc.o
-                              0x62124 (size before relaxing)
- .debug_str     0x00064a8a       0x50 modules/src/wire.o
-                              0x5e2e2 (size before relaxing)
- .debug_str     0x00064ada      0xb60 src/codec.o
-                              0x5f0dc (size before relaxing)
- .debug_str     0x0006563a      0x17a src/encoder.o
-                              0x5e5bd (size before relaxing)
- .debug_str     0x000657b4      0x103 src/leds.o
-                              0x5e51f (size before relaxing)
- .debug_str     0x000658b7      0x333 src/main.o
-                              0x6342e (size before relaxing)
- .debug_str     0x00065bea       0x18 src/spi.o
-                              0x5e9f9 (size before relaxing)
- .debug_str     0x00065c02      0x11b src/system_stm32f4xx.o
-                              0x5e45c (size before relaxing)
- .debug_str     0x00065d1d       0x23 src/timer4.o
-                              0x5e9da (size before relaxing)
- .debug_str     0x00065d40      0x16b C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_str     0x00060a14      0x1b7 modules/src/ADSR.o
+                              0x5e395 (size before relaxing)
+ .debug_str     0x00060bcb       0x70 modules/src/ADSRwave.o
+                              0x5e3a3 (size before relaxing)
+ .debug_str     0x00060c3b       0x98 modules/src/DAC.o
+                              0x5e33a (size before relaxing)
+ .debug_str     0x00060cd3     0x3c9b modules/src/LFO.o
+                              0x620b2 (size before relaxing)
+ .debug_str     0x0006496e       0x6e modules/src/LFOfld.o
+                              0x620c6 (size before relaxing)
+ .debug_str     0x000649dc       0xc7 modules/src/Osc.o
+                              0x62120 (size before relaxing)
+ .debug_str     0x00064aa3       0x50 modules/src/wire.o
+                              0x5e2de (size before relaxing)
+ .debug_str     0x00064af3      0xb60 src/codec.o
+                              0x5f0d8 (size before relaxing)
+ .debug_str     0x00065653      0x17a src/encoder.o
+                              0x5e5b9 (size before relaxing)
+ .debug_str     0x000657cd      0x103 src/leds.o
+                              0x5e51b (size before relaxing)
+ .debug_str     0x000658d0      0x333 src/main.o
+                              0x6342a (size before relaxing)
+ .debug_str     0x00065c03       0x18 src/spi.o
+                              0x5e9f5 (size before relaxing)
+ .debug_str     0x00065c1b      0x11b src/system_stm32f4xx.o
+                              0x5e458 (size before relaxing)
+ .debug_str     0x00065d36       0x23 src/timer4.o
+                              0x5e9d6 (size before relaxing)
+ .debug_str     0x00065d59      0x16b C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
                                 0x242 (size before relaxing)
- .debug_str     0x00065eab      0x503 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .debug_str     0x00065ec4      0x503 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
                                 0x704 (size before relaxing)
 
 .comment        0x00000000       0xef
@@ -8101,9 +8101,9 @@ OUTPUT(kek.elf elf32-littlearm)
  .comment       0x0000007f       0x80 src/spi.o
  .comment       0x0000007f       0x80 src/system_stm32f4xx.o
  .comment       0x0000007f       0x80 src/timer4.o
- .comment       0x0000007f       0x70 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .comment       0x0000007f       0x70 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
                                  0x71 (size before relaxing)
- .comment       0x000000ef       0x71 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
+ .comment       0x000000ef       0x71 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_common_tables.o)
 
 .debug_frame    0x00000000     0x3468
  .debug_frame   0x00000000      0x23c StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -8126,7 +8126,7 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_frame   0x00002f80       0x54 src/spi.o
  .debug_frame   0x00002fd4       0x7c src/system_stm32f4xx.o
  .debug_frame   0x00003050       0x54 src/timer4.o
- .debug_frame   0x000030a4       0x20 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_frame   0x000030a4       0x20 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
  .debug_frame   0x000030c4       0xac c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
  .debug_frame   0x00003170       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
  .debug_frame   0x000031c0       0xc4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
@@ -8139,4 +8139,4 @@ OUTPUT(kek.elf elf32-littlearm)
  .debug_frame   0x00003434       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
 
 .debug_loc      0x00000000       0xd8
- .debug_loc     0x00000000       0xd8 C:/Workspace_sheet/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
+ .debug_loc     0x00000000       0xd8 C:/Synthesizer/kek/CMSIS/Lib/GCC\libarm_cortexM4lf_math.a(arm_sin_f32.o)
