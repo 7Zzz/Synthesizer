@@ -7,6 +7,7 @@ void save(u8 index, u8 value)
 	{
 		btns[index].state = 1; // saving button state into structure btns
 		time_periods[index][pressing_index] = millis; //save period into array
+		btns[index].tap_millis = millis;
 	}
 	else if (btns[index].state == PRESSED && value == PRESSED)
 		return;
@@ -22,40 +23,30 @@ void save(u8 index, u8 value)
 
 }
 
-void sequencer_func(u8 i)
+void replay()
 {
-	state = RECORD_OFF;
-	if (RECORD_BTN == PRESSED) // RECORD_BTN it's record activator this is not necessarily a button
-		state = RECORD_ON;
+
+}
+
+void sequencer_func(u8* btn_states)
+{
+
+	if (btns[RECORD_BTN].state == PRESSED) // RECORD_BTN it's record activator this is not necessarily a button
+		state = !state;
 
 	if (state == RECORD_ON)
 	{
 		setWHOLEcolor(RECORD_OFF_COLOR); // turning led off
 		DIG_LED_update();
-		if (i == 0)
-		{
-			//int *btn_values0 = {values0}; //    BTN_Read_All(MCP23017_ADDR(3)); // reading all buttons //TODO without FOR
-			for (int i = 0; i < NUM_OF_BTNs; i++)
-				value1[i] = 0;
-		}
-		else
-		{
-			//int *btn_values1 = {values1}; //    BTN_Read_All(MCP23017_ADDR(3)); // reading all buttons //TODO without FOR
-			for (int i = 0; i < NUM_OF_BTNs; i++)
-				value1[i] = 1;
-		}
-//		for (int i = 0; i < NUM_OF_BTNs; i++)
-//			btns[i].state = btn_values[i];
 
 		for (int i = 0; i < NUM_OF_BTNs; i++)
-			save(i, value1[i]); // updating state and starting timer(so and stopping it)
-	}
-	else
-	{
+			save(i, btn_states[i]); // updating state and starting timer(so and stopping it)
 		light();
+		for (int i = 0; i < NUM_OF_BTNs; i++)
+			btns[i].state = btn_states[i];
 	}
-
 }
+
 
 void light(void)
 {

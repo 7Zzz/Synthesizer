@@ -22,26 +22,25 @@
 #define RECORD_BTN            1
 
 #define MAX_VALUE_OF_PRESSING 5
-#define values0 1
-#define values1 0
 
 u8 state;
 unsigned long time_periods[NUM_OF_BTNs][MAX_VALUE_OF_PRESSING]; // playing interval of buttons(in millis)
+uint32_t the_begining_millis;
+uint32_t first_pause = 1000;
 
 typedef struct
 {
 	u8 state;
 	u8 counter_pressing;
+	uint32_t tap_millis;
 } btn;
 
 btn btns[NUM_OF_BTNs];
-//for awhile
-int value1[NUM_OF_BTNs];
 
 extern volatile uint32_t millis;
 
 void save(u8 index, u8 value);
-void sequencer_func(u8 i);
+void sequencer_func(u8* i);
 void light(void);
 
 #endif /* SEQUENCER_H_ */

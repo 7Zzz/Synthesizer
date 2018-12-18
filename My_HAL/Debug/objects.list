@@ -30,6 +30,7 @@
 "Src/spi.o"
 "Src/stm32f1xx_hal_msp.o"
 "Src/stm32f1xx_it.o"
+"Src/syscalls.o"
 "Src/system_stm32f1xx.o"
 "Src/tim.o"
 "Src/usart.o"

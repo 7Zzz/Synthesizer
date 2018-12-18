@@ -12,6 +12,7 @@
 #include "global.h"
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx_hal_gpio.h"
+#include "spi.h"
 #include "MCP23017.h"
 
 // settings
@@ -44,6 +45,6 @@ u8 buttonMsg[3];                    // message to send on state change
 // functions
 void MCP_Button_Init(BTN_TypeDef* b, u8 num, IO_PortTD port, IO_PinTD pin);
 void MCP_Buttons_InitAll(void);     // for one MCP (TODO: for many)
-int *BTN_Read_All(u8 mcp_addr);
+void *BTN_Read_All(u8 mcp_addr, u8* btnstates);
 
 #endif /* BUTTON_H_ */
