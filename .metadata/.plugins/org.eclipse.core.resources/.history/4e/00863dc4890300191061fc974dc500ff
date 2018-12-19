@@ -1,0 +1,20 @@
+#include "sequencer.h"
+
+void save(u8 index, u8 value) {
+	if(value == PRESSED){
+		btn
+	}
+}
+
+void sequencer_func(u8* btn_states) {
+	if (btn_states[RECORD_BTN] == PRESSED) //RECORD_BTN it's record activator this is not necessarily a button
+		state = !state;
+
+	if (state == RECORD_ON) {
+		setWHOLEcolor(RECORD_OFF_COLOR);
+		DIG_LED_update();
+		for (int i = 0; i < NUM_OF_BTNs; i++) {
+			save(i, btn_states[i]);
+		}
+	}
+}

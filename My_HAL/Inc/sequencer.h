@@ -12,30 +12,32 @@
 #include "dig_LED.h"
 #include <stdlib.h>
 
-#define SELECTED              0  , 255, 255
-#define RECORD_ON_COLOR       255,   0,   0
-#define RECORD_OFF_COLOR      0  ,   0,   0
+#define SELECTED 0,255,0
+#define NOT_SELECTED 0,0,0
+#define REPLAY_ON_COLOR 0,0,100
+#define REPLAY_OFF_COLOR 0,0,0
+#define RECORD_ON_COLOR 100,0,0
+#define RECORD_OFF_COLOR 0,0,0
+#define ON  1
+#define OFF 0
+#define RECORD_BTN 0
+#define REPLAY_BTN 1
 
-#define RECORD_ON             1
-#define RECORD_OFF            0
-
-#define RECORD_BTN            1
-
-#define MAX_VALUE_OF_PRESSING 5
-
-u8 state;
-unsigned long time_periods[NUM_OF_BTNs][MAX_VALUE_OF_PRESSING]; // playing interval of buttons(in millis)
-
+u8 record_state;
+u8 replay_state;
+unsigned long replay_start;
 typedef struct
 {
 	u8 state;
-	u8 counter_pressing;
+	u8 previous_pressing;
+	unsigned long selected_start;
 } btn;
 
 btn btns[NUM_OF_BTNs];
 
 extern volatile uint32_t millis;
 
+void replay(void);
 void save(u8 index, u8 value);
 void sequencer_func(u8* i);
 void light(void);

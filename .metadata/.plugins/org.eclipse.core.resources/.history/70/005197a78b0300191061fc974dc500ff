@@ -1,0 +1,29 @@
+#include "sequencer.h"
+
+void save(u8 index, u8 value) {
+	if (value == PRESSED) {
+	}
+}
+
+void sequencer_func(u8* btn_states) {
+	if (btn_states[RECORD_BTN] == PRESSED) //RECORD_BTN it's record activator this is not necessarily a button
+		state = !state;
+
+	if (state == RECORD_ON) {
+
+		setWHOLEcolor(RECORD_OFF_COLOR);
+		DIG_LED_update();
+
+		for (int i = 0; i < NUM_OF_BTNs; i++)
+			if (btn_states[i] == PRESSED && btns[i].state == !btn_states[i])
+				btns[i].state = !btns[i].state;
+
+		for (int i = 0; i < NUM_OF_BTNs; i++)
+			if(btns[i].state == 1)
+				setLEDcolor(i, SELECTED);
+			else
+				setLEDcolor(i, NOT_SELECTED);
+		DIG_LED_update();
+	}
+}
+

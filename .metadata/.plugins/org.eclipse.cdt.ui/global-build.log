@@ -412,3 +412,1540 @@ At top level:
       ^~~~~
 make: *** [Src/sequencer.o] Error 1
 Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+14:26:39 **** Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24228	     20	   4256	  28504	   6f58	My_HAL.elf
+ 
+14:27:13 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+14:27:44 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+14:29:31 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:46 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [My_HAL.elf] Error 1
+makefile:35: recipe for target 'My_HAL.elf' failed
+14:42:07 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'My_HAL.elf' failed
+make: *** [My_HAL.elf] Error 1
+14:42:15 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'My_HAL.elf' failed
+make: *** [My_HAL.elf] Error 1
+14:44:15 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'My_HAL.elf' failed
+make: *** [My_HAL.elf] Error 1
+14:44:31 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'My_HAL.elf' failed
+make: *** [My_HAL.elf] Error 1
+14:46:16 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:48:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:36:6: warning: 'light' defined but not used [-Wunused-function]
+ void light(void) {
+      ^~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+14:46:28 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24228	     20	   4256	  28504	   6f58	My_HAL.elf
+ 
+14:47:09 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:10:14: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   btns[index].tap_millis = millis;
+              ^
+../Src/sequencer.c:11:3: error: 'the_begining_millis' undeclared (first use in this function)
+   the_begining_millis = btns[0].tap_millis + first_pause;
+   ^~~~~~~~~~~~~~~~~~~
+../Src/sequencer.c:11:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/sequencer.c:11:32: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   the_begining_millis = btns[0].tap_millis + first_pause;
+                                ^
+../Src/sequencer.c:11:46: error: 'first_pause' undeclared (first use in this function)
+   the_begining_millis = btns[0].tap_millis + first_pause;
+                                              ^~~~~~~~~~~
+../Src/sequencer.c: In function 'replay':
+../Src/sequencer.c:31:15: error: 'the_begining_millis' undeclared (first use in this function)
+   if(millis - the_begining_millis >= btns[i].tap_millis)
+               ^~~~~~~~~~~~~~~~~~~
+../Src/sequencer.c:31:45: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   if(millis - the_begining_millis >= btns[i].tap_millis)
+                                             ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+14:48:38 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:10:14: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   btns[index].tap_millis = millis;
+              ^
+../Src/sequencer.c:11:3: error: 'the_begining_millis' undeclared (first use in this function)
+   the_begining_millis = btns[0].tap_millis + first_pause;
+   ^~~~~~~~~~~~~~~~~~~
+../Src/sequencer.c:11:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/sequencer.c:11:32: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   the_begining_millis = btns[0].tap_millis + first_pause;
+                                ^
+../Src/sequencer.c:11:46: error: 'first_pause' undeclared (first use in this function)
+   the_begining_millis = btns[0].tap_millis + first_pause;
+                                              ^~~~~~~~~~~
+../Src/sequencer.c: In function 'replay':
+../Src/sequencer.c:31:15: error: 'the_begining_millis' undeclared (first use in this function)
+   if(millis - the_begining_millis >= btns[i].tap_millis)
+               ^~~~~~~~~~~~~~~~~~~
+../Src/sequencer.c:31:45: error: 'btn {aka struct <anonymous>}' has no member named 'tap_millis'
+   if(millis - the_begining_millis >= btns[i].tap_millis)
+                                             ^
+make: *** [Src/sequencer.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+14:48:52 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24228	     20	   4256	  28504	   6f58	My_HAL.elf
+ 
+14:49:14 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Src/sequencer.o:(.data+0x0): multiple definition of `first_pause'
+Src/main.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'My_HAL.elf' failed
+make: *** [My_HAL.elf] Error 1
+14:49:39 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24228	     20	   4360	  28608	   6fc0	My_HAL.elf
+ 
+14:50:08 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24280	     20	   4360	  28660	   6ff4	My_HAL.elf
+ 
+14:50:52 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:00:33 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20896	     20	   4360	  25276	   62bc	My_HAL.elf
+ 
+15:01:00 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20392	     20	   4360	  24772	   60c4	My_HAL.elf
+ 
+15:02:27 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20396	     20	   4360	  24776	   60c8	My_HAL.elf
+ 
+15:02:47 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:02:53 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:03:29 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20392	     20	   4360	  24772	   60c4	My_HAL.elf
+ 
+15:04:53 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:19 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:08:47 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:09:43 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:29 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20396	     20	   4360	  24776	   60c8	My_HAL.elf
+ 
+15:13:24 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/MCP_button.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/MCP_button.d" -MT"Src/MCP_button.o" -o "Src/MCP_button.o" "../Src/MCP_button.c"
+../Src/MCP_button.c:27:7: error: conflicting types for 'BTN_Read_All'
+ void *BTN_Read_All(u8 mcp_addr, u8** btnstates) {
+       ^~~~~~~~~~~~
+In file included from ../Src/MCP_button.c:7:0:
+C:/Synthesizer/My_HAL/Inc/MCP_button.h:48:7: note: previous declaration of 'BTN_Read_All' was here
+ void *BTN_Read_All(u8 mcp_addr, u8* btnstates);
+       ^~~~~~~~~~~~
+../Src/MCP_button.c: In function 'BTN_Read_All':
+../Src/MCP_button.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Src/subdir.mk:75: recipe for target 'Src/MCP_button.o' failed
+make: *** [Src/MCP_button.o] Error 1
+15:13:36 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/MCP_button.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/MCP_button.d" -MT"Src/MCP_button.o" -o "Src/MCP_button.o" "../Src/MCP_button.c"
+../Src/MCP_button.c: In function 'BTN_Read_All':
+../Src/MCP_button.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/MCP_button.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:154:49: warning: passing argument 2 of 'BTN_Read_All' from incompatible pointer type [-Wincompatible-pointer-types]
+   sequencer_func(BTN_Read_All(MCP23017_ADDR(3), a));
+                                                 ^
+In file included from C:/Synthesizer/My_HAL/Inc/sequencer.h:11:0,
+                 from ../Src/main.c:26:
+C:/Synthesizer/My_HAL/Inc/MCP_button.h:48:7: note: expected 'u8 ** {aka unsigned char **}' but argument is of type 'u8 * {aka unsigned char *}'
+ void *BTN_Read_All(u8 mcp_addr, u8** btnstates);
+       ^~~~~~~~~~~~
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20400	     20	   4360	  24780	   60cc	My_HAL.elf
+ 
+15:13:39 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:14:09 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:15:00 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:154:49: warning: passing argument 2 of 'BTN_Read_All' from incompatible pointer type [-Wincompatible-pointer-types]
+   sequencer_func(BTN_Read_All(MCP23017_ADDR(3), &a));
+                                                 ^
+In file included from C:/Synthesizer/My_HAL/Inc/sequencer.h:11:0,
+                 from ../Src/main.c:26:
+C:/Synthesizer/My_HAL/Inc/MCP_button.h:48:7: note: expected 'u8 ** {aka unsigned char **}' but argument is of type 'u8 (*)[16] {aka unsigned char (*)[16]}'
+ void *BTN_Read_All(u8 mcp_addr, u8** btnstates);
+       ^~~~~~~~~~~~
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20400	     20	   4360	  24780	   60cc	My_HAL.elf
+ 
+15:16:12 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/MCP_button.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/MCP_button.d" -MT"Src/MCP_button.o" -o "Src/MCP_button.o" "../Src/MCP_button.c"
+../Src/MCP_button.c: In function 'BTN_Read_All':
+../Src/MCP_button.c:57:3: error: invalid type argument of unary '*' (have 'int')
+   *btnstates[i] = buttons[i].state;
+   ^~~~~~~~~~~~~
+../Src/MCP_button.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/MCP_button.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/MCP_button.o' failed
+15:16:28 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/MCP_button.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/MCP_button.d" -MT"Src/MCP_button.o" -o "Src/MCP_button.o" "../Src/MCP_button.c"
+../Src/MCP_button.c: In function 'BTN_Read_All':
+../Src/MCP_button.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/MCP_button.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20396	     20	   4360	  24776	   60c8	My_HAL.elf
+ 
+15:16:44 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:17:20 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20396	     20	   4360	  24776	   60c8	My_HAL.elf
+ 
+15:18:11 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20396	     20	   4360	  24776	   60c8	My_HAL.elf
+ 
+15:18:21 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:56 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20392	     20	   4360	  24772	   60c4	My_HAL.elf
+ 
+15:31:00 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c:21:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:31:18 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c: At top level:
+../Src/sequencer.c:22:2: error: expected identifier or '(' before '}' token
+ }}}}}}
+  ^
+../Src/sequencer.c:22:3: error: expected identifier or '(' before '}' token
+ }}}}}}
+   ^
+../Src/sequencer.c:22:4: error: expected identifier or '(' before '}' token
+ }}}}}}
+    ^
+../Src/sequencer.c:22:5: error: expected identifier or '(' before '}' token
+ }}}}}}
+     ^
+../Src/sequencer.c:22:6: error: expected identifier or '(' before '}' token
+ }}}}}}
+      ^
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:31:21 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c:21:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:35:00 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c:27:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:35:19 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c:28:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+make: *** [Src/sequencer.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+15:35:35 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'save':
+../Src/sequencer.c:6:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+../Src/sequencer.c:27:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Src/sequencer.c:9:6: warning: 'sequencer_func' defined but not used [-Wunused-function]
+ void sequencer_func(u8* btn_states) {
+      ^~~~~~~~~~~~~~
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:35:46 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20136	     20	   4096	  24252	   5ebc	My_HAL.elf
+ 
+15:37:40 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20172	     20	   4096	  24288	   5ee0	My_HAL.elf
+ 
+15:37:44 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:38:21 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20176	     20	   4096	  24292	   5ee4	My_HAL.elf
+ 
+15:40:20 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20176	     20	   4096	  24292	   5ee4	My_HAL.elf
+ 
+15:41:35 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20188	     20	   4096	  24304	   5ef0	My_HAL.elf
+ 
+15:42:01 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20208	     20	   4096	  24324	   5f04	My_HAL.elf
+ 
+15:43:15 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20188	     20	   4096	  24304	   5ef0	My_HAL.elf
+ 
+15:45:38 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:17:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   for (int i = 0; i < NUM_OF_BTNs; i++)
+   ^~~
+../Src/sequencer.c:20:4: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+    elif ()
+    ^~~~
+../Src/sequencer.c:20:4: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+../Src/sequencer.c:22:3: error: expected ';' before 'for'
+   for (int i = 0; i < NUM_OF_BTNs; i++)
+   ^~~
+../Src/sequencer.c:25:4: error: expected '}' before 'else'
+    else
+    ^~~~
+../Src/sequencer.c:26:17: error: 'i' undeclared (first use in this function)
+     setLEDcolor(i, NOT_SELECTED);
+                 ^
+../Src/sequencer.c:26:17: note: each undeclared identifier is reported only once for each function it appears in
+../Src/sequencer.c: At top level:
+../Src/sequencer.c:29:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Src/sequencer.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+15:45:43 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20212	     20	   4096	  24328	   5f08	My_HAL.elf
+ 
+15:45:52 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:57 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:19:5: error: expected ')' before 'btns'
+     btns[i].state = !btns[i].state;
+     ^~~~
+../Src/sequencer.c:27:2: error: expected expression before '}' token
+  }
+  ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+15:47:13 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20176	     20	   4096	  24292	   5ee4	My_HAL.elf
+ 
+15:47:40 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:19 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:52:22 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20220	     20	   4000	  24240	   5eb0	My_HAL.elf
+ 
+15:54:39 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20220	     20	   4000	  24240	   5eb0	My_HAL.elf
+ 
+15:55:02 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+15:56:22 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20220	     20	   4000	  24240	   5eb0	My_HAL.elf
+ 
+15:58:46 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20236	     20	   4000	  24256	   5ec0	My_HAL.elf
+ 
+15:58:58 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:55 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20268	     20	   4032	  24320	   5f00	My_HAL.elf
+ 
+16:14:43 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:5:3: error: 'state' undeclared (first use in this function)
+   state = !state;
+   ^~~~~
+../Src/sequencer.c:5:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/sequencer.c:27:2: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+  elif (replay_state == ON) {
+  ^~~~
+../Src/sequencer.c:27:28: error: expected ';' before '{' token
+  elif (replay_state == ON) {
+                            ^
+../Src/sequencer.c:36:1: error: expected declaration or statement at end of input
+ }
+ ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+16:15:04 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:27:2: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+  elif (replay_state == ON) {
+  ^~~~
+../Src/sequencer.c:27:28: error: expected ';' before '{' token
+  elif (replay_state == ON) {
+                            ^
+../Src/sequencer.c:36:1: error: expected declaration or statement at end of input
+ }
+ ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+16:15:12 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:27:3: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+  }elif (replay_state == ON) {
+   ^~~~
+../Src/sequencer.c:27:29: error: expected ';' before '{' token
+  }elif (replay_state == ON) {
+                             ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+16:15:59 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:30:2: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+  elif(replay_state == ON)
+  ^~~~
+../Src/sequencer.c:31:2: error: expected ';' before '{' token
+  {
+  ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+16:16:15 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:30:2: warning: implicit declaration of function 'elif' [-Wimplicit-function-declaration]
+  elif(replay_state == ON)
+  ^~~~
+../Src/sequencer.c:31:2: error: expected ';' before '{' token
+  {
+  ^
+make: *** [Src/sequencer.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+16:16:56 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:35:8: error: expected expression before ')' token
+    if () {
+        ^
+make: *** [Src/sequencer.o] Error 1
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+16:18:30 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+../Src/sequencer.c: In function 'sequencer_func':
+../Src/sequencer.c:35:34: error: expected expression before ')' token
+    if (btns[i].selected_start == ) {
+                                  ^
+Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+make: *** [Src/sequencer.o] Error 1
+16:18:42 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20308	     20	   4040	  24368	   5f30	My_HAL.elf
+ 
+16:20:56 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20320	     20	   4048	  24388	   5f44	My_HAL.elf
+ 
+16:23:01 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20356	     20	   4048	  24424	   5f68	My_HAL.elf
+ 
+16:23:05 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+make: Nothing to be done for 'all'.
+16:23:34 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20356	     20	   4048	  24424	   5f68	My_HAL.elf
+ 
+16:25:53 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20356	     20	   4048	  24424	   5f68	My_HAL.elf
+ 
+16:33:26 **** Incremental Build of configuration Debug for project My_HAL ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/sequencer.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20252	     20	   4048	  24320	   5f00	My_HAL.elf
+ 

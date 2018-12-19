@@ -1,19 +1,33 @@
-15:51:37 **** Incremental Build of configuration Debug for project My_HAL ****
+16:33:26 **** Incremental Build of configuration Debug for project My_HAL ****
 make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Synthesizer\My_HAL\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:118:6: warning: unused variable 'yy' [-Wunused-variable]
+  u16 yy = 0;                      // test
+      ^~
+Finished building: ../Src/main.c
+ 
 Building file: ../Src/sequencer.c
 Invoking: MCU GCC Compiler
 C:\Synthesizer\My_HAL\Debug
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Synthesizer/My_HAL/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Synthesizer/My_HAL/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Synthesizer/My_HAL/Drivers/CMSIS/Include" -I../MT_WH1602  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sequencer.d" -MT"Src/sequencer.o" -o "Src/sequencer.o" "../Src/sequencer.c"
-../Src/sequencer.c: In function 'sequencer_func':
-../Src/sequencer.c:48:1: error: expected declaration or statement at end of input
- }
- ^
-At top level:
-../Src/sequencer.c:36:6: warning: 'light' defined but not used [-Wunused-function]
- void light(void) {
-      ^~~~~
-make: *** [Src/sequencer.o] Error 1
-Src/subdir.mk:75: recipe for target 'Src/sequencer.o' failed
+Finished building: ../Src/sequencer.c
+ 
+Building target: My_HAL.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "My_HAL.elf" @"objects.list"   -lm
+Finished building target: My_HAL.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/make/make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "My_HAL.elf" "My_HAL.hex"
+arm-none-eabi-size "My_HAL.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20252	     20	   4048	  24320	   5f00	My_HAL.elf
+ 
 
-15:51:37 Build Finished (took 320ms)
+16:33:27 Build Finished (took 1s.538ms)
 
